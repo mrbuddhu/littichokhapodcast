@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Litti Chokha Podcast",
   description: "A podcast celebrating Bihar's culture, traditions, and stories",
+  icons: {
+    icon: "/images/litti-chokha.jpg",
+  },
 }
 
 export default function RootLayout({
@@ -16,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/litti-chokha.jpg" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

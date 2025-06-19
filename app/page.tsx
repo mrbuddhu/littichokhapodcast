@@ -11,7 +11,15 @@ export default function ComingSoonPage() {
       <header className="border-b">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2">
-            <Mic className="h-6 w-6" />
+            <div className="relative w-8 h-8 rounded-full overflow-hidden">
+              <Image
+                src="/images/litti-chokha.jpg"
+                alt="Litti Chokha Icon"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
             <span className="text-lg font-bold">Litti Chokha Podcast</span>
           </Link>
         </div>
